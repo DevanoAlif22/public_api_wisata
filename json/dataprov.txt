@@ -1,0 +1,36 @@
+Aceh DONE 20 - DONE ✅ gol aceh V siap
+Sulawesi Utara DONE 20 - DONE ✅ gol sulut V siap
+Sumatera Barat DONE 20 - DONE ✅ gol subar V siap
+Riau dan kepulauan DONE 20 - DONE ✅ gol riau V siap
+Jambi DONE 20 - DONE ✅ gol jambi V siap
+Sumatera Selatan DONE 20 - DONE ✅ gol sumsel V siap
+Bangka Belitung DONE 20 - DONE ✅ gol bangka V siap
+Bengkulu DONE 20 - DONE ✅ gol bengkulu V siap
+Lampung DONE 20  - DONE ✅ gol lampung V siap
+DKI Jakarta DONE 20 - DONE ✅ gol jakarta V siap
+Jawa Barat DONE 30 - DONE ✅  gol jawabarat V siap
+Banten DONE 20 - DONE ✅ del gol banten V siap
+Jawa Tengah DONE 30 - DONE ✅ del gol jawatengah V siap
+DI Yogyakarta DONE 30 - DONE ✅ del gol jogja V siap
+Jawa Timur DONE 30 - DONE ✅ del gol jawatimur V siap
+Bali DONE 30 - DONE ✅ gol bali V siap
+Nusa Tenggara Barat (NTB) DONE 20 - DONE ✅ del  gol ntb V siap
+Nusa Tenggara Timur (NTT) DONE 20 - DONE ✅ gol ntt V siap
+Kalimantan Barat DONE 20 - DONE ✅ gol kalbar V siap
+Kalimantan Tengah DONE 20 - DONE ✅ del kalteng V siap
+Kalimantan Selatan DONE 20  - DONE ✅ gol kalsel V siap
+Kalimantan Timur DONE 20 - DONE ✅ del gol kaltim V siap
+Kalimantan Utara DONE 20 - DONE ✅ gol kalut V siap
+Sumatera Utara DONE 20 - DONE ✅ gol sumut V siap
+Sulawesi Barat DONE 20 - DONE ✅ del gol sulbar V siap 
+Sulawesi Tengah DONE 20 - DONE ✅ gol sulteng zonk siap 
+Sulawesi Selatan DONE 20 - DONE ✅ del gol sulsel zonk siap 
+Sulawesi Tenggara DONE 20 - DONE ✅ gol sultenggara zonk siap
+Gorontalo DONE 20 - DONE ✅ gol gorontalo V siap
+Maluku DONE 20 - DONE ✅ gol maluku V siap
+Papua DONE 20 - DONE ✅ gol papua siap
+
+
+Dav : aceh - kalimantan timur
+Fer : kalimantan barat - sulawesi utara
+Dev : sumatera barat - yogyakarta

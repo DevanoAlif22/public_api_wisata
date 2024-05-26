@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WISATA INDONESIA DEV</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body style="background-color: #00233c; margin-bottom: 50px">
+    <div class="container" style="width: 100%; display: flex">
+      <div class="wrapper">
+        <h1>API DOKUMENTASI WISATA INDONESIA DEV</h1>
+        <p>
+          API Wisata Indonesia Kita menyediakan data lengkap mengenai provinsi
+          Indonesia dan rekomendasi wisata di dalamnya.
+        </p>
+        <p>
+          URL :
+          <a href="" style="color: rgb(43, 110, 226)">wisataindonesiadev</a>
+        </p>
+        <p style="margin-top: 10px">
+          Api ini berisi data seluruh wilayah indonesia mulai dari :
+        </p>
+        <ul style="color: white; margin-left: 20px">
+          <li>Provinsi</li>
+          <li>Rekomendasi Wisata</li>
+        </ul>
+        <p style="margin-top: 10px">Wisata Berisi data seperti :</p>
+        <ul style="color: white; margin-left: 20px">
+          <li>Nama</li>
+          <li>Alamat</li>
+          <li>Gambar</li>
+          <li>Link</li>
+          <li>Rating</li>
+          <li>Dan lainnya</li>
+        </ul>
+        <div style="display: flex; margin-top: 10px">
+          <a
+            href=""
+            style="
+              margin-right: 15px;
+              color: white;
+              text-decoration: none;
+              padding: 6px;
+              border-radius: 5px;
+              border: 1px solid white;
+            "
+            ><i
+              class="fa-solid fa-user"
+              style="color: #ffffff; margin-right: 5px"
+            ></i>
+            Author</a
+          >
+          <a
+            href=""
+            style="
+              margin-right: 15px;
+              color: white;
+              text-decoration: none;
+              padding: 6px;
+              border-radius: 5px;
+              border: 1px solid white;
+            "
+            ><i
+              class="fa-brands fa-github"
+              style="color: #ffffff; margin-right: 5px"
+            ></i
+            >Source Code</a
+          >
+        </div>
+        <p style="margin-top: 10px">Endpoint :</p>
+        <p style="margin-top: 10px">Provinsi</p>
+        <div class="path">
+          <p>http://localhost:3000/provinsi</p>
+          <button class="get" id="getProvinsi">GET</button>
+        </div>
+
+        <p style="color: aqua; margin-top: -30px">Response</p>
+        <div class="path" id="response" style="display: none">
+          <pre class="pre" style="color: white" id="responsePre"></pre>
+        </div>
+
+        <p style="margin-top: 40px; margin-bottom: 5px">Wisata</p>
+        <input
+          type="text"
+          name=""
+          class="input"
+          placeholder="Masukkan Kode Provinsi"
+        />
+        <div class="path">
+          <p class="kodeProvinsi">
+            http://localhost:3000/wisata/{kode provinsi}
+          </p>
+          <button class="get" id="getWisata">GET</button>
+        </div>
+
+        <p style="color: aqua; margin-top: -30px">Response</p>
+        <div class="path" id="responseWisata" style="display: none">
+          <pre class="pre" style="color: white" id="responsePreWisata"></pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
