@@ -90,4 +90,8 @@ h6 {
   .path {
     width: 300px;
   }
+  .path p {
+    width: 90%;
+    font-size: 15px;
+  }
 }
