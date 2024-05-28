@@ -149,7 +149,7 @@ document.querySelector(".inputProvinsi").addEventListener("input", function () {
   } else {
     if (kodeWisata === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi=" +
         kodeProvinsi +
         "&place_id={place_id}";
     } else {
@@ -180,7 +180,7 @@ document.querySelector(".inputWisata").addEventListener("input", function () {
   } else {
     if (kodeProvinsi === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}&place_id=" +
         kodeWisata;
     } else {
       var url =
