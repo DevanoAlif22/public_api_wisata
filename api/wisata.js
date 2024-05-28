@@ -5,7 +5,10 @@ export default function (req, res) {
   const { kodeProvinsi } = req.query;
 
   if (!kodeProvinsi) {
-    res.status(400).json({ error: "Bad Request: kode_provinsi is required" });
+    res.status(400).json({
+      status: 404,
+      message: "Bad Request: kode_provinsi is required",
+    });
     return;
   }
 
@@ -16,16 +19,19 @@ export default function (req, res) {
 
   fs.readFile(provinsiFile, "utf8", (err, data) => {
     if (err) {
-      res
-        .status(404)
-        .json({
-          error:
-            "Not Found: No tourism data found for the specified province code",
-        });
+      res.status(404).json({
+        status: 404,
+        message:
+          "Not Found: No tourism data found for the specified province code",
+      });
       return;
     }
 
-    const wrappedData = { data: JSON.parse(data) };
+    const wrappedData = {
+      status: 200,
+      message: "Success",
+      data: JSON.parse(data),
+    };
     res.status(200).json(wrappedData);
   });
 }

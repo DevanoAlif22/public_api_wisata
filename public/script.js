@@ -33,15 +33,18 @@ function showResponse(response) {
 function showResponseWisata(response) {
   var responseElement = document.getElementById("responseWisata");
   var preElement = document.getElementById("responsePreWisata");
+  var inputan = document.querySelector(".input");
   if (responseElement.style.display === "none") {
     responseElement.style.display = "block";
     preElement.innerText = response;
     document.getElementById("getWisata").innerText = "Close";
     document.getElementById("getWisata").style.backgroundColor = "red";
+    inputan.disabled = true;
   } else {
     responseElement.style.display = "none";
     document.getElementById("getWisata").innerText = "GET";
     document.getElementById("getWisata").style.backgroundColor = "#009c60";
+    inputan.disabled = false;
   }
 }
 
@@ -110,15 +113,21 @@ document.getElementById("getDetail").addEventListener("click", function () {
 function showResponseDetail(response) {
   var responseElement = document.getElementById("responseDetail");
   var preElement = document.getElementById("responsePreDetail");
+  var inputProvinsi = document.querySelector(".inputProvinsi");
+  var inputWisata = document.querySelector(".inputWisata");
   if (responseElement.style.display === "none") {
     responseElement.style.display = "block";
     preElement.innerText = response;
     document.getElementById("getDetail").innerText = "Close";
     document.getElementById("getDetail").style.backgroundColor = "red";
+    inputProvinsi.disabled = true;
+    inputWisata.disabled = true;
   } else {
     responseElement.style.display = "none";
     document.getElementById("getDetail").innerText = "GET";
     document.getElementById("getDetail").style.backgroundColor = "#009c60";
+    inputProvinsi.disabled = false;
+    inputWisata.disabled = false;
   }
 }
 

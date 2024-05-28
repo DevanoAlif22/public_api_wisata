@@ -8,9 +8,10 @@ export default function (req, res) {
   const { kodeProvinsi, place_id } = query;
   console.log(query);
   if (!kodeProvinsi || !place_id) {
-    res
-      .status(400)
-      .json({ error: "Bad Request: kodeProvinsi and place_id are required" });
+    res.status(400).json({
+      status: 400,
+      message: "Bad Request: kodeProvinsi and place_id are required",
+    });
     return;
   }
 
@@ -23,7 +24,8 @@ export default function (req, res) {
   fs.readFile(provinsiFile, "utf8", (err, data) => {
     if (err) {
       res.status(404).json({
-        error:
+        status: 404,
+        message:
           "Not Found: No tourism data found for the specified province code",
       });
       return;
@@ -34,16 +36,20 @@ export default function (req, res) {
       const placeData = jsonData.find((place) => place.place_id === place_id);
 
       if (placeData) {
-        res.status(200).json(placeData);
+        res.status(200).json({ status: 200, data: placeData });
       } else {
         res.status(404).json({
-          error: "Not Found: No place found with the specified place_id",
+          status: 200,
+          message: "Not Found: No place found with the specified place_id",
         });
       }
     } catch (parseError) {
       res
         .status(500)
-        .json({ error: "Internal Server Error: Unable to parse JSON data" });
+        .json({
+          status: 500,
+          message: "Internal Server Error: Unable to parse JSON data",
+        });
     }
   });
 }
