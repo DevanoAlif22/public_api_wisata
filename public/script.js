@@ -124,24 +124,24 @@ document.querySelector(".inputProvinsi").addEventListener("input", function () {
   if (kodeProvinsi === "") {
     if (kodeWisata === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/{kode provinsi}/{place_id}";
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}&place_id={place_id}";
     } else {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/{kode provinsi}/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}&place_id=" +
         kodeWisata;
     }
     document.querySelector(".kodeDetail").innerText = url;
   } else {
     if (kodeWisata === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi" +
         kodeProvinsi +
-        "/{place_id}";
+        "&place_id={place_id}";
     } else {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi=" +
         kodeProvinsi +
-        "/" +
+        "&place_id=" +
         kodeWisata;
     }
     document.querySelector(".kodeDetail").innerText = url;
@@ -153,25 +153,25 @@ document.querySelector(".inputWisata").addEventListener("input", function () {
   if (kodeWisata === "") {
     if (kodeProvinsi === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/{kode provinsi}/{place_id}";
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}&place_id={place_id}";
     } else {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi=" +
         kodeProvinsi +
-        "/" +
+        "&place_id=" +
         "{place_id}";
     }
     document.querySelector(".kodeDetail").innerText = url;
   } else {
     if (kodeProvinsi === "") {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/{kode provinsi}/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi={kode provinsi}/" +
         kodeWisata;
     } else {
       var url =
-        "https://public-api-wisata.vercel.app/api/detail/" +
+        "https://public-api-wisata.vercel.app/api/detail?kodeProvinsi=" +
         kodeProvinsi +
-        "/" +
+        "&place_id=" +
         kodeWisata;
     }
     document.querySelector(".kodeDetail").innerText = url;
