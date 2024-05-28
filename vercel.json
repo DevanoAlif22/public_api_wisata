@@ -20,6 +20,10 @@
       "dest": "/api/wisata.js"
     },
     {
+      "src": "/api/detail",
+      "dest": "/api/detail.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }

@@ -18,12 +18,8 @@
       <div class="wrapper">
         <h1>API DOKUMENTASI WISATA INDONESIA DEV</h1>
         <p>
-          API Wisata Indonesia Dev menyediakan data lengkap mengenai provinsi
-          Indonesia dan rekomendasi wisata di dalamnya dengan total 999+ wisata.
-        </p>
-        <p>
-          URL :
-          <a href="/" style="color: rgb(43, 110, 226)">Wisata Indonesia Dev</a>
+          API Wisata Indonesia Kita menyediakan data lengkap mengenai provinsi
+          Indonesia dan rekomendasi wisata di dalamnya.
         </p>
         <p style="margin-top: 10px">
           Api ini berisi data seluruh wilayah indonesia mulai dari :
@@ -78,7 +74,7 @@
         <p style="margin-top: 10px">Endpoint :</p>
         <p style="margin-top: 10px">Provinsi</p>
         <div class="path">
-          <p>public-api-wisata.vercel.app/api/provinsi</p>
+          <p>http://localhost:3000/provinsi</p>
           <button class="get" id="getProvinsi">GET</button>
         </div>
 
@@ -92,11 +88,11 @@
           type="text"
           name=""
           class="input"
-          placeholder="Masukkan ID Provinsi"
+          placeholder="Masukkan Kode Provinsi"
         />
         <div class="path">
           <p class="kodeProvinsi">
-            public-api-wisata.vercel.app/api/wisata?kodeProvinsi={kode provinsi}
+            http://localhost:3000/wisata/{kode provinsi}
           </p>
           <button class="get" id="getWisata">GET</button>
         </div>
@@ -104,6 +100,34 @@
         <p style="color: aqua; margin-top: -30px">Response</p>
         <div class="path" id="responseWisata" style="display: none">
           <pre class="pre" style="color: white" id="responsePreWisata"></pre>
+        </div>
+
+        <p style="margin-top: 40px; margin-bottom: 5px">Detail Wisata</p>
+        <div style="display: flex">
+          <input
+            type="text"
+            name=""
+            class="inputProvinsi"
+            placeholder="Masukkan Kode Provinsi"
+            style="margin-right: 10px"
+          />
+          <input
+            type="text"
+            name=""
+            class="inputWisata"
+            placeholder="Masukkan Place_id Wisata"
+          />
+        </div>
+        <div class="path">
+          <p class="kodeDetail">
+            http://localhost:3000/detail/{kode provinsi}/{place_id wisata}
+          </p>
+          <button class="get" id="getDetail">GET</button>
+        </div>
+
+        <p style="color: aqua; margin-top: -30px">Response</p>
+        <div class="path" id="responseDetail" style="display: none">
+          <pre class="pre" style="color: white" id="responsePreDetail"></pre>
         </div>
       </div>
     </div>
