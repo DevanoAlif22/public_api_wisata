@@ -40,11 +40,13 @@ function showResponseWisata(response) {
     document.getElementById("getWisata").innerText = "Close";
     document.getElementById("getWisata").style.backgroundColor = "red";
     inputan.disabled = true;
+    inputan.style.border = "red";
   } else {
     responseElement.style.display = "none";
     document.getElementById("getWisata").innerText = "GET";
     document.getElementById("getWisata").style.backgroundColor = "#009c60";
     inputan.disabled = false;
+    inputan.style.border = "white";
   }
 }
 
@@ -124,12 +126,16 @@ function showResponseDetail(response) {
     document.getElementById("getDetail").style.backgroundColor = "red";
     inputProvinsi.disabled = true;
     inputWisata.disabled = true;
+    inputProvinsi.style.border = "red";
+    inputWisata.style.border = "red";
   } else {
     responseElement.style.display = "none";
     document.getElementById("getDetail").innerText = "GET";
     document.getElementById("getDetail").style.backgroundColor = "#009c60";
     inputProvinsi.disabled = false;
     inputWisata.disabled = false;
+    inputProvinsi.style.border = "white";
+    inputWisata.style.border = "white";
   }
 }
 
