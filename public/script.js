@@ -40,13 +40,13 @@ function showResponseWisata(response) {
     document.getElementById("getWisata").innerText = "Close";
     document.getElementById("getWisata").style.backgroundColor = "red";
     inputan.disabled = true;
-    inputan.style.color = "red";
+    inputan.style.border = "1px solid red";
   } else {
     responseElement.style.display = "none";
     document.getElementById("getWisata").innerText = "GET";
     document.getElementById("getWisata").style.backgroundColor = "#009c60";
     inputan.disabled = false;
-    inputan.style.color = "white";
+    inputan.style.border = "1px solid white";
   }
 }
 
@@ -126,16 +126,16 @@ function showResponseDetail(response) {
     document.getElementById("getDetail").style.backgroundColor = "red";
     inputProvinsi.disabled = true;
     inputWisata.disabled = true;
-    inputProvinsi.style.color = "red";
-    inputWisata.style.color = "red";
+    inputProvinsi.style.border = "1px solid red";
+    inputWisata.style.border = "1px solid red";
   } else {
     responseElement.style.display = "none";
     document.getElementById("getDetail").innerText = "GET";
     document.getElementById("getDetail").style.backgroundColor = "#009c60";
     inputProvinsi.disabled = false;
     inputWisata.disabled = false;
-    inputProvinsi.style.color = "white";
-    inputWisata.style.color = "white";
+    inputProvinsi.style.border = "1px solid white";
+    inputWisata.style.border = "1px solid white";
   }
 }
 
