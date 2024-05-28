@@ -56,7 +56,7 @@ document.getElementById("getWisata").addEventListener("click", function () {
   fetch(url)
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("No place found with the specified kodeProvinsi");
       }
       return response.json();
     })
@@ -96,7 +96,9 @@ document.getElementById("getDetail").addEventListener("click", function () {
   fetch(url)
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error(
+          "No place found with the specified kodeProvinsi or place_id"
+        );
       }
       return response.json();
     })
